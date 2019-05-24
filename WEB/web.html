@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0px; 
+}
+.navbar {
+  overflow: hidden;
+  background-color: #9fa091;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.show {
+  display: block;
+}
+.sidebar {
+  position: fixed;
+  top: 45px;
+  left: 0px;
+  width: 150px;
+  height: 1000px;
+  background-color: black;
+  color: white;
+  margin: 0px;
+  padding: 10px 5px;
+  white-space:nowrap;
+}
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+.sidebar li, .sidebar ul {
+  list-style-type: none;
+  margin: 5px 10px;
+  padding: 10px;
+}
+.sidebar {
+  transition: width 1s;
+ }
+.sidebar a:hover {
+  color: blue;
+}
+.sidebar:hover {
+  width: 150px; 
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+@media only screen and (max-width: 900000px) {
+    .sidebar {
+        width: 10px;
+    }
+}
+</style>
+</head>
+<body>
+<div class="sidebar">
+ <ul>
+ <li><a href="#"> 1</a></li>
+ <li><a href="#"> 2</a></li>
+ <li><a href="#"> 3</a></li>
+ </ul>
+</div>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  </div> 
+</div>
+
+<div style="text-align:center;"><h3>張仲恩</h3></div>>
+<div align="center"> 
+<table border="0" width="100%" id="table"> 
+	<table border="1">
+    <tr>
+        <td>星座</td>
+        <td align="center">金牛座</td>
+    </tr>
+    <tr>
+        <td>生肖</td>
+        <td align="center">龍</td>
+    </tr>
+	<tr>
+        <td>生日</td>
+        <td align="center">2000/05/06</td>
+    </tr>
+	<tr>
+        <td>聯絡</td>
+        <td align="center">datoo_andrew@yahoo.com.tw ,<a href="https://www.facebook.com/datoo.andrew?ref=bookmarks" target="_blank">Facebook</a></td>
+    </tr>
+</table>
+	
+</div>	
+
+</body>
+</body>
+</html>
