@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8" />
 <style>
 body {
   margin: 0px; 
@@ -96,32 +97,32 @@ body {
         width: 10px;
     }
 }
+
 </style>
 </head>
 <body>
 <div class="sidebar">
  <ul>
- <li><a href="#"> 1</a></li>
- <li><a href="#"> 2</a></li>
- <li><a href="#"> 3</a></li>
+ <li><a href="http://www.tlps.ptc.edu.tw/"> 國小</a></li>
+ <li><a href="http://163.24.56.12/bin/home.php"> 國中</a></li>
+ <li><a href="http://www.pths.ptc.edu.tw/home"> 高中</a></li>
  </ul>
 </div>
 <div class="navbar">
   <a href="#home">Home</a>
-  <a href="#news">News</a>
   <div class="dropdown">
-  <button class="dropbtn" onclick="myFunction()">Dropdown
+  <button class="dropbtn" onclick="myFunction()">我常逛的網站
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-content" id="myDropdown">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a href="https://www.bilibili.com/">bilibili</a>
+    <a href="https://www.youtube.com/">Youtube</a>
+    <a href="https://www.linetv.tw/">Linetv</a>
   </div>
   </div> 
 </div>
 
-<div style="text-align:center;"><h3>張仲恩</h3></div>>
+<div style="text-align:center;"><h1>張仲恩</h1></div>
 <div align="center"> 
 <table border="0" width="100%" id="table"> 
 	<table border="1">
@@ -141,10 +142,48 @@ body {
         <td>聯絡</td>
         <td align="center">datoo_andrew@yahoo.com.tw ,<a href="https://www.facebook.com/datoo.andrew?ref=bookmarks" target="_blank">Facebook</a></td>
     </tr>
+	<tr>
+        <td>生份</td>
+        <td align="center">金門大學資訊工程學系一年級</td>
+    </tr>
+	<tr>
+        <td>學歷</td>
+        <td align="center">國小：塔樓國小,國中：里港國中,高中：屏東高中</br>
+		                  (左邊有學校的連結)
+		</td>
+    </tr>
 </table>
-	
-</div>	
+<br/>
+<canvas id="myCanvas" width="200" height="200" style="border:1px solid #a486ba;"/>
+<script>
+window.onload = function() {
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath()
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = "#000000"
+    ctx.fillStyle = "#FF0000"
+    ctx.arc(100,100,50,Math.PI,0)
+    ctx.fill()
+    ctx.stroke()
 
+    ctx.beginPath()
+    ctx.fillStyle = "#FFFFFF"
+    ctx.arc(100,100,50,0,Math.PI)
+    ctx.fill()
+    ctx.stroke()
+
+    ctx.beginPath()
+    ctx.fillStyle = "#FFFFFF"   
+    ctx.moveTo(50,100)  
+    ctx.arc(100,100,10,Math.PI,0) 
+    ctx.lineTo(150,100)
+    ctx.arc(100,100,10,0,Math.PI)
+    ctx.fill()
+    ctx.stroke()
+}
+</script>
+</div>	
 </body>
 </body>
 </html>
