@@ -1,7 +1,7 @@
 # 我的簡易網站
 https://andrewdtn.github.io/wd107b/WEB/web.html
  
-## 1.說明
+## 說明
 
 1. 利用了2X6的表格將我的個人資料填入(使用超連結將自己的FB也附上去)
 2. 使用了CSS中的轉場效果
